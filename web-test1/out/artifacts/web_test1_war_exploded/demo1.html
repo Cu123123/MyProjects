@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function checkName(){
+            var uname = document.getElementById("uname").value;
+            if(uname!="zhang"){
+                document.getElementById("p").innerHTML="<img src='photo/dh.jpg' width=\"20\" height=\"20\"/>"
+            }else {
+                document.getElementById("p").innerHTML="<img src='photo/ch.jpg' width=\"20\" height=\"20\"/>"
+            }
+        }
+    </script>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td><input type="text" onblur="checkName()" id="uname"></td>
+            <td><div id="p"></div></td>
+        </tr>
+    </table>
+
+
+
+</form>
+</body>
+</html>

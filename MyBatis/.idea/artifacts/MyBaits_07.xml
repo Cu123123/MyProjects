@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jpackage" name="MyBaits-07">
+    <output-path>$PROJECT_DIR$/out/artifacts/MyBaits_07</output-path>
+    <root id="root">
+      <element id="archive" name="MyBaits_07.jar">
+        <element id="module-output" name="MyBaits-07" />
+      </element>
+    </root>
+  </artifact>
+</component>

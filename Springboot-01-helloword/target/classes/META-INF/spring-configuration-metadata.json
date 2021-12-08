@@ -1,0 +1,23 @@
+{
+  "groups": [
+    {
+      "name": "mycar",
+      "type": "com.zhang.boot.bean.Car",
+      "sourceType": "com.zhang.boot.bean.Car"
+    }
+  ],
+  "properties": [
+    {
+      "name": "mycar.brand",
+      "type": "java.lang.String",
+      "sourceType": "com.zhang.boot.bean.Car"
+    },
+    {
+      "name": "mycar.price",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zhang.boot.bean.Car",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT&useSSL=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+
+    druid:
+      filters: stat,wall
+      stat-view-servlet:
+        enable: true
+        login-username: admin
+        login-password: admin
+        reset-enable: false
+
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: "*.js,*.css,/druid/*"
+      aop-patterns: com.zhang
+      filter:
+        stat:
+          slow-sql-millis: 1000
+          log-slow-sql: true
+          enabled: true
+        wall:
+          enabled: true

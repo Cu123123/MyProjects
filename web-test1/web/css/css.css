@@ -1,0 +1,14 @@
+.all{
+    width: 500px;
+    height: 200px;
+    border-color: black;
+    border-width: 2px 2px 2px 2px;
+
+}
+.context{
+    border-width: 5px;
+    border-color: aqua;
+    border-collapse: inherit;
+    width: 500px;
+    height: 200px;
+}

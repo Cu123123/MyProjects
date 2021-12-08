@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/cars/sell;low=34;brand=byd,qq">矩阵变量</a>
+<a href="/boss/1;age=40/2;age=20">矩阵变量,同value区分</a>
+<a href="/car/1/owner/zhangsan?age=18&interests=basketball&interests=football">/car/{id}/owner/{username}</a>
+<form  action="/save" method="post">
+    <input type="text" name="username">
+    <input type="password" name="pas">
+    <input type="submit" value="提交">
+</form>
+<form  action="/user" method="post">
+    <input name="_m" type="hidden" value="delete">
+    <input value="REST-DELETE" type="submit">
+</form>
+<form  action="/user" method="post">
+    <input name="_method" type="hidden" value="put">
+    <input value="REST-PUT" type="submit">
+</form>
+</body>
+</html>

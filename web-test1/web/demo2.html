@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    function colo(){
+      var index = document.getElementById("col").selectedIndex;
+      console.log(index);
+      if(index == 1){
+        document.getElementById("color").style.backgroundColor = "blue";
+      }else if(index == 2){
+        document.getElementById("color").style.backgroundColor = "red";
+      }else {
+        document.getElementById("color").style.backgroundColor = "green";
+      }
+    }
+  </script>
+</head>
+<body>
+<select id = "col" onchange="colo()">
+  <option>---</option>
+  <option>蓝</option>
+  <option>红</option>
+  <option>绿</option>
+</select>
+<div id="color">1111</div>
+<input type="radio" name="sex">男
+<input type="radio" name="sex">女
+</body>
+</html>

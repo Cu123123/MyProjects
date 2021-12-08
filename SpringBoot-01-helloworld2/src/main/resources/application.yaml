@@ -1,0 +1,30 @@
+person:
+#  userName: zhangsan
+#  单引号不会识别会转义字符
+#  双引号会识别转义字符
+  user-name: zhangsan
+  boss: true
+  birth: 2021/11/12
+  age: 18
+#  interests: [足球，篮球]
+  interests:
+    - 篮球
+    - 足球
+#  animal: [猫，狗]
+#  score:
+#    english: 80
+#    math: 90
+  score: {english: 80,math: 90}
+  salarys:
+    - 9999.99
+    - 9999.98
+  pet:
+    name: 咪咪
+    weight: 15
+  allPets:
+    sick:
+      - {name: 阿猫,weight: 10}
+      - name: 阿猫2
+        weight: 11
+    health: [{name: 阿猫3,weighe: 15},{name: 阿猫4,weight: 16}]
+

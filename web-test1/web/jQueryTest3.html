@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="js/jquery-3.6.0.js"/>
+  <script type="text/javascript">
+    $(function (){
+      $("button").click(
+              function (){
+                $("li").each(
+                        function (index){
+                          alert(index+":"+$(this).text());
+                          $(this).css("color","black");
+                          if(index%2==0){
+                            $(this).addClass("myclass1");
+                          }else {
+                            $(this).addClass("myclass2");
+                          }
+                        }
+                )
+              }
+      )
+    })
+  </script>
+  <style>
+    .myclass1{
+      background-color: pink;
+    }
+    .myclass2{
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+<button>输出每个列表项的值</button>
+<ul>
+  <li>白酒</li>
+  <li>啤酒</li>
+  <li>红酒</li>
+</ul>
+<input type="button" value="提交" onclick="">
+</body>
+</html>

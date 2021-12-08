@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="js/jquery-3.6.0.js"></script>
+<script>
+  $(function (){
+    $("che").click(function (){
+      alert($('input[type=password]').val());
+    })
+  })
+</script>
+<style>
+  #id1{background-color: blue}
+  .c1{background-color: pink}
+</style>
+<body>
+<input type="password" >
+<input type="button" value="测试" id="che">
+<div id="id1">111</div><br>
+<div class="c1">222</div><br>
+<div class="c1">222</div>
+</body>
+</html>
